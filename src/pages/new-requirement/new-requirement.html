@@ -10,28 +10,21 @@
       <div class="list card">
         
           <div class="item item-avatar">
-            <h2 style="text-align: center;">Question here...?</h2>
+            <h2 style="text-align: center;">Type of requirement</h2>
           </div>
         
           <div class="item item-body">
             <form id="page-form1">
-              <ion-item id="page-input1">
-                <ion-label>
-                  Input
-                </ion-label>
-                <ion-input type="text" placeholder=""></ion-input>
-              </ion-item>
+              
               <ion-item id="page-select1">
                 <ion-label>
-                  Select
+                  Type
                 </ion-label>
-                <ion-select name=""></ion-select>
-              </ion-item>
-              <ion-item id="page-textarea1">
-                <ion-label>
-                  Text
-                </ion-label>
-                <ion-textarea placeholder=""></ion-textarea>
+                <ion-select [(ngModel)]="type" name="bla">
+                  <ion-option value="chart">Chart</ion-option>
+                  <ion-option value="table">Table</ion-option>
+                </ion-select>
+                
               </ion-item>
             </form>
           </div>
@@ -44,7 +37,7 @@
         <!-- <button id="page-button2" style="float:middle" ion-button outline color="assertive">
           Cancel
         </button> -->
-        <button id="page-button2" style="float:right" ion-button color="positive" >
+        <button id="page-button2" style="float:right" on-click="goToNewRequirement(type)" ion-button color="positive" >
           Next
         </button>
       </div>

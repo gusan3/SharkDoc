@@ -11,6 +11,7 @@ export class PagePage {
 
   constructor(public navCtrl: NavController) {
   }
+  
   goToNewRequirement(params){
     if (!params) params = {};
     this.navCtrl.push(NewRequirementPage);

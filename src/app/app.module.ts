@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 import { PagePage } from '../pages/page/page';
 import { NewRequirementPage } from '../pages/new-requirement/new-requirement';
 import { ViewreqPage } from '../pages/viewreq/viewreq';
+import { Req2Page } from '../pages/req2/req2'
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     PagePage,
     NewRequirementPage,
-    ViewreqPage
+    ViewreqPage,
+    Req2Page
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     PagePage,
     NewRequirementPage,
-    ViewreqPage
+    ViewreqPage,
+    Req2Page
   ],
   providers: [
     StatusBar,
