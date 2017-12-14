@@ -18,7 +18,7 @@ export class NewRequirementPage {
       alert("Select at least one option");
     }else{
       this.navCtrl.push(Req2Page,{
-        thing1:params
+        'card-type':params
       });
     }
     

@@ -15,14 +15,35 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Req2Page {
 
+  textOption;
+  title;
+  options;
+  type : string = this.navParams.get('card-type');
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.textOption = [
+      {
+        'title': 'You have choose a Graph. What type of graph do you want?',
+        'options': ['Bar', 'Bubble', 'Line', 'Gauge', 'A new model']
+      
+      },
+      {
+        'title': 'You have choose a Table. What columns do you want?',
+        'options': ['Totals', 'Revenue', 'WTW']
+      }
+    ]
+
+    if(this.type == "chart") {
+      this.title = this.textOption[0].title;
+      this.options = this.textOption[0].options;
+    }else{
+      this.title = this.textOption[1].title;
+      this.options = this.textOption[1].options;
+    }
   }
-  type : string = this.navParams.get('thing1');
-  showw(){
-    console.log(this.type)
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Req2Page');
+
+  goToNewRequirement() {
+    
   }
 
 }

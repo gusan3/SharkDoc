@@ -14,3 +14,29 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background-md {
+    border-color: #175276;
+    background: #175276;
+}
+
+.button-md, .button-md.activated {
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 1.4rem;
+    margin: 1.5rem 1.2rem;
+    padding: 0em 1.1em;
+    height: 126px;
+    background-color: #175276;
+}
+
+.button-block {
+    display: inline-block;
+    clear: both;
+    width: 70%;
+    contain: strict;
+}
+
+.toolbar-title-md {
+    color: #f8f2f2;
+}

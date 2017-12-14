@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Update Requirement
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+    <ion-list inset>
+        <button ion-item *ngFor="let issue of issues">
+          {{ issue.title }}
+        </button> 
+      </ion-list>
+</ion-content>

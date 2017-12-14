@@ -7,12 +7,35 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>req2</ion-title>
+    <ion-title>STEP 2</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-<button on-click="showw()">clica</button>
+
+<div class="list card">
+  
+    <div class="item item-avatar">
+      <h3 style="text-align: center;">{{title}}</h3>
+    </div>
+  
+    <div class="item item-body">
+      <form id="page-form1">
+        <ion-item *ngFor="let o of options;">
+            <ion-label>{{o}}</ion-label>
+            <ion-checkbox checked="false"></ion-checkbox>
+          </ion-item>
+      </form>
+    </div>
+  </div>
+
+  <div class="fixedbottom">
+    <button id="page-button1" style="float:left" ion-button  color="assertive" >
+      Back
+    </button>
+    <button id="page-button2" style="float:right" on-click="goToNewRequirement()" ion-button color="positive" >
+      Next
+    </button>
+  </div>
 </ion-content>

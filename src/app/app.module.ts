@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { PagePage } from '../pages/page/page';
 import { NewRequirementPage } from '../pages/new-requirement/new-requirement';
+import { UpdateRequirementPage } from '../pages/update-requirement/update-requirement';
 import { ViewreqPage } from '../pages/viewreq/viewreq';
 import { Req2Page } from '../pages/req2/req2'
 
@@ -16,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     PagePage,
     NewRequirementPage,
+    UpdateRequirementPage,
     ViewreqPage,
     Req2Page
   ],
@@ -28,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     PagePage,
     NewRequirementPage,
+    UpdateRequirementPage,
     ViewreqPage,
     Req2Page
   ],

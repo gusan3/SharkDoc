@@ -1,15 +1,16 @@
 page-page {
 
-}
-.vertical-align-content > *
-{
-     display: flex!important;
-     align-content: center!important;
-     align-items: center!important;
-}
-.container{
-    padding-top:50%;
-}
-.icon-space{
-    padding-right:10px
+    .vertical-align-content > *
+    {
+        display: flex!important;
+        align-content: center!important;
+        align-items: center!important;
+    }
+    .container{
+        padding-top:50%;
+    }
+    .icon-space{
+        padding-right:10px
+    }
+
 }

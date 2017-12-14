@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NewRequirementPage } from '../new-requirement/new-requirement';
+import { UpdateRequirementPage } from '../update-requirement/update-requirement';
 import { ViewreqPage } from '../viewreq/viewreq';
 
 @Component({
@@ -16,6 +17,11 @@ export class PagePage {
     if (!params) params = {};
     this.navCtrl.push(NewRequirementPage);
   }
+
+  goToUpdateRequirement(){
+    this.navCtrl.push(UpdateRequirementPage);
+  }
+
   goToViewRequirements(params){
     if (!params) params = {};
     this.navCtrl.push(ViewreqPage);
